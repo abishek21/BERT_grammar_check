@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<title>Fine Tuning BERT</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1 style="text-align: center">BERT model to check Grammar</h1>
+
+    <div class="form">
+        <form action="/" method="POST">
+            <p>Enter sentence to check grammar</p>
+
+            <input type="text" name="content" id="content">
+            <input type="submit" value="Check Grammar">
+
+
+
+        </form>
+    </div>
+</div>
+{% endblock %}
